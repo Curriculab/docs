@@ -3,7 +3,7 @@
 **Story Prefix:** COURSE
 **Feature Area:** Course Management
 **System Overview:** [university-reg-features.md](./university-reg-features.md)
-**Related docs:** Course capacity rules → [course-capacity-requirements.md](./course-capacity-requirements.md) | Waitlist behavior → [course-waitlists-requirements.md](./course-waitlists-requirements.md)
+**Related docs:** Course capacity rules → [course-capacity-requirements.md](./course-capacity-requirements.md) | Waitlist behavior → [course-waitlists-requirements.md](./course-waitlists-requirements.md) | Room scheduling → [room-facility-requirements.md](./room-facility-requirements.md) (ROOM-001, ROOM-004)
 
 ---
 

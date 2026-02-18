@@ -46,6 +46,10 @@ All detailed functional requirements are captured as **user stories** in the doc
 | 17 | Degree Programs & Curriculum Management | [degree-programs-requirements.md](./degree-programs-requirements.md) | DEG | DEG-001 – DEG-006 |
 | 18 | Room & Facility Management | [room-facility-requirements.md](./room-facility-requirements.md) | ROOM | ROOM-001 – ROOM-005 |
 | 19 | Administrative User Management | [admin-user-management-requirements.md](./admin-user-management-requirements.md) | USR | USR-001 – USR-006 |
+| 20 | Academic Advising | [academic-advising-requirements.md](./academic-advising-requirements.md) | ADV | ADV-001 – ADV-006 |
+| 21 | Graduation & Commencement | [graduation-commencement-requirements.md](./graduation-commencement-requirements.md) | GRAD | GRAD-001 – GRAD-006 |
+| 22 | Transfer Credit Evaluation | [transfer-credit-requirements.md](./transfer-credit-requirements.md) | XFER | XFER-001 – XFER-005 |
+| 23 | Document Management | [document-management-requirements.md](./document-management-requirements.md) | DOC | DOC-001 – DOC-005 |
 
 ---
 

@@ -45,6 +45,20 @@ User roles (Student, Instructor, Academic Staff, Advisor, Registrar, Administrat
 | [Degree Programs & Curriculum Management](./degree-programs-requirements.md) | DEG | DEG-001 – DEG-006 | Create/update/retire programs, requirement categories, course mappings, catalog year management |
 | [Room & Facility Management](./room-facility-requirements.md) | ROOM | ROOM-001 – ROOM-005 | Add/update rooms, view availability, conflict enforcement, block unavailable periods |
 | [Administrative User Management](./admin-user-management-requirements.md) | USR | USR-001 – USR-006 | Create/deactivate accounts, bulk import, SSO/directory provisioning, role management, user search |
+| [Academic Advising](./academic-advising-requirements.md) | ADV | ADV-001 – ADV-006 | Advisor info, appointment scheduling, advising roster, session notes, academic plans, enrollment overrides |
+| [Graduation & Commencement](./graduation-commencement-requirements.md) | GRAD | GRAD-001 – GRAD-006 | Graduation application, Registrar clearance, pre-grad audit, ceremony registration, diploma ordering, status tracking |
+| [Transfer Credit Evaluation](./transfer-credit-requirements.md) | XFER | XFER-001 – XFER-005 | Submit transfer courses, staff review and decision, student view, appeals, degree audit application |
+| [Document Management](./document-management-requirements.md) | DOC | DOC-001 – DOC-005 | Submit official documents, staff review workflow, status tracking, generate university documents, retention rules |
+
+---
+
+## Planning & Architecture Docs
+
+| Document | Description |
+|---|---|
+| [story-prioritization.md](./story-prioritization.md) | MoSCoW priority table for all 122 stories across every feature area |
+| [story-map.md](./story-map.md) | Five end-to-end user journeys mapping stories in sequence, plus cross-journey observations |
+| [non-functional-requirements.md](./non-functional-requirements.md) | Performance, scalability, availability, maintainability, and localization requirements |
 
 ---
 

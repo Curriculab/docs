@@ -3,6 +3,7 @@
 **Story Prefix:** REC
 **Feature Area:** Academic Records
 **System Overview:** [university-reg-features.md](./university-reg-features.md)
+**Related docs:** Graduation (pre-grad clearance audit) → [graduation-commencement-requirements.md](./graduation-commencement-requirements.md) (GRAD-002, GRAD-003) | Academic Advising (degree audit review) → [academic-advising-requirements.md](./academic-advising-requirements.md) (ADV-005) | Transfer Credit (credits applied to audit) → [transfer-credit-requirements.md](./transfer-credit-requirements.md) (XFER-005)
 
 ---
 

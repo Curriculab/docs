@@ -3,6 +3,7 @@
 **Story Prefix:** SEM
 **Feature Area:** Semester & Session Management
 **System Overview:** [university-reg-features.md](./university-reg-features.md)
+**Related docs:** Student Registration (reg windows consumed by students) → [student-registration-requirements.md](./student-registration-requirements.md) | Academic Records (grade submission deadline) → [academic-records-requirements.md](./academic-records-requirements.md) | Course Waitlists (waitlist deadline) → [course-waitlists-requirements.md](./course-waitlists-requirements.md)
 
 ---
 

@@ -3,7 +3,7 @@
 **Story Prefix:** DEG
 **Feature Area:** Degree Programs & Curriculum Management
 **System Overview:** [university-reg-features.md](./university-reg-features.md)
-**Related docs:** Academic Records (degree audit) → [academic-records-requirements.md](./academic-records-requirements.md) | Course Catalogue → [course-catalogue-requirements.md](./course-catalogue-requirements.md) | Student Profile (program declaration) → [student-profile-requirements.md](./student-profile-requirements.md)
+**Related docs:** Academic Records (degree audit) → [academic-records-requirements.md](./academic-records-requirements.md) | Course Catalogue → [course-catalogue-requirements.md](./course-catalogue-requirements.md) | Student Profile (program declaration) → [student-profile-requirements.md](./student-profile-requirements.md) | Transfer Credit (equivalency mapping) → [transfer-credit-requirements.md](./transfer-credit-requirements.md) (XFER-002, XFER-005) | Graduation (pre-grad audit) → [graduation-commencement-requirements.md](./graduation-commencement-requirements.md) (GRAD-003)
 
 ---
 

@@ -3,6 +3,7 @@
 **Story Prefix:** AUTH
 **Feature Area:** User Authentication & Authorization
 **System Overview:** [university-reg-features.md](./university-reg-features.md)
+**Related docs:** Admin User Management (user provisioning) → [admin-user-management-requirements.md](./admin-user-management-requirements.md) | Academic Advising (enrollment overrides) → [academic-advising-requirements.md](./academic-advising-requirements.md) (ADV-006)
 
 ---
 

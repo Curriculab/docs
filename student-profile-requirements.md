@@ -3,7 +3,7 @@
 **Story Prefix:** PROF
 **Feature Area:** Student Profile & Account Management
 **System Overview:** [university-reg-features.md](./university-reg-features.md)
-**Related docs:** Authentication → [user-authentication-requirements.md](./user-authentication-requirements.md) | Academic Records → [academic-records-requirements.md](./academic-records-requirements.md) | Degree Programs → [degree-programs-requirements.md](./degree-programs-requirements.md)
+**Related docs:** Authentication → [user-authentication-requirements.md](./user-authentication-requirements.md) | Academic Records → [academic-records-requirements.md](./academic-records-requirements.md) | Degree Programs → [degree-programs-requirements.md](./degree-programs-requirements.md) | Academic Advising → [academic-advising-requirements.md](./academic-advising-requirements.md) (ADV-001, ADV-003, ADV-005)
 
 ---
 
