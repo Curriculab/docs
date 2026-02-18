@@ -59,6 +59,7 @@ User roles (Student, Instructor, Academic Staff, Advisor, Registrar, Administrat
 | [story-prioritization.md](./story-prioritization.md) | MoSCoW priority table for all 122 stories across every feature area |
 | [story-map.md](./story-map.md) | Five end-to-end user journeys mapping stories in sequence, plus cross-journey observations |
 | [non-functional-requirements.md](./non-functional-requirements.md) | Performance, scalability, availability, maintainability, and localization requirements |
+| [data-model.md](./data-model.md) | Canonical entity model — 57 entities across 6 domain clusters with Mermaid ERDs, attribute tables, and key design decisions |
 
 ---
 
