@@ -41,6 +41,10 @@ User roles (Student, Instructor, Academic Staff, Advisor, Registrar, Administrat
 | [Security & Privacy](./security-privacy-requirements.md) | SEC | SEC-001 – SEC-005 | Encryption, FERPA/GDPR compliance, daily backups, restore, data retention/deletion |
 | [Notifications](./notifications-requirements.md) | NOTIF | NOTIF-001 – NOTIF-005 | Email and SMS events, in-system notification center, announcements, preference settings |
 | [Support & Help](./support-help-requirements.md) | SUP | SUP-001 – SUP-005 | FAQ/help center, ticket submission, ticket tracking, staff response workflow, metrics |
+| [Student Profile & Account Management](./student-profile-requirements.md) | PROF | PROF-001 – PROF-006 | Personal info, emergency contacts, enrollment status, program declaration, profile photo, verification letters |
+| [Degree Programs & Curriculum Management](./degree-programs-requirements.md) | DEG | DEG-001 – DEG-006 | Create/update/retire programs, requirement categories, course mappings, catalog year management |
+| [Room & Facility Management](./room-facility-requirements.md) | ROOM | ROOM-001 – ROOM-005 | Add/update rooms, view availability, conflict enforcement, block unavailable periods |
+| [Administrative User Management](./admin-user-management-requirements.md) | USR | USR-001 – USR-006 | Create/deactivate accounts, bulk import, SSO/directory provisioning, role management, user search |
 
 ---
 

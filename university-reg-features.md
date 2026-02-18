@@ -42,6 +42,10 @@ All detailed functional requirements are captured as **user stories** in the doc
 | 13 | Security & Privacy | [security-privacy-requirements.md](./security-privacy-requirements.md) | SEC | SEC-001 – SEC-005 |
 | 14 | Notifications | [notifications-requirements.md](./notifications-requirements.md) | NOTIF | NOTIF-001 – NOTIF-005 |
 | 15 | Support & Help | [support-help-requirements.md](./support-help-requirements.md) | SUP | SUP-001 – SUP-005 |
+| 16 | Student Profile & Account Management | [student-profile-requirements.md](./student-profile-requirements.md) | PROF | PROF-001 – PROF-006 |
+| 17 | Degree Programs & Curriculum Management | [degree-programs-requirements.md](./degree-programs-requirements.md) | DEG | DEG-001 – DEG-006 |
+| 18 | Room & Facility Management | [room-facility-requirements.md](./room-facility-requirements.md) | ROOM | ROOM-001 – ROOM-005 |
+| 19 | Administrative User Management | [admin-user-management-requirements.md](./admin-user-management-requirements.md) | USR | USR-001 – USR-006 |
 
 ---
 
