@@ -1,8 +1,8 @@
 # Non-Functional Requirements
 
-**System Overview:** [university-reg-features.md](./university-reg-features.md)
+**System Overview:** [university-reg-features.md](../requirements/university-reg-features.md)
 
-> **Scope:** This document covers non-functional requirements (NFRs) not already addressed by dedicated feature docs. Security NFRs (encryption, backups, compliance) are in [security-privacy-requirements.md](./security-privacy-requirements.md). Accessibility NFRs (WCAG, keyboard, responsive) are in [accessibility-requirements.md](./accessibility-requirements.md).
+> **Scope:** This document covers non-functional requirements (NFRs) not already addressed by dedicated feature docs. Security NFRs (encryption, backups, compliance) are in [security-privacy-requirements.md](../requirements/security-privacy-requirements.md). Accessibility NFRs (WCAG, keyboard, responsive) are in [accessibility-requirements.md](../requirements/accessibility-requirements.md).
 
 ---
 
