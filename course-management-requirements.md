@@ -1,46 +1,134 @@
-### What are some requirements that the university registration system have for course management?
+# Course Management Requirements
 
-For an effective course management system, the university registration system should have the following requirements:
+**Story Prefix:** COURSE
+**Feature Area:** Course Management
+**System Overview:** [university-reg-features.md](./university-reg-features.md)
+**Related docs:** Course capacity rules → [course-capacity-requirements.md](./course-capacity-requirements.md) | Waitlist behavior → [course-waitlists-requirements.md](./course-waitlists-requirements.md)
 
-**1. Course Catalogue:** 
-- The system should allow the creation and maintenance of a detailed course catalogue.
-- The catalogue should include course details like title, code, description, prerequisites, credit hours, department, instructor, and class schedule.
+---
 
-**2. Course Lifecycle Management:**
-- Staff should be able to create, update, and retire courses in the catalogue.
-- Courses should be able to be scheduled for different semesters, with a method to set the start and end dates for each course.
-- The system should also track and display the history of course modifications.
+## COURSE-001: Create a Course
 
-**3. Course Capacity Control:**
-- Each course should have a set limit on the number of students who can enroll.
-- Once the limit is reached, the system should automatically create a waitlist.
-- As students drop the course, the system should automatically enroll students from the waitlist and notify them.
+**As an** Academic Staff member
+**I want** to create a new course in the system
+**So that** it can be scheduled and offered to students in upcoming terms
 
-**4. Prerequisites and Corequisites Management:**
-- The system should allow for the setting of course prerequisites and corequisites.
-- During registration, it should automatically check whether a student has fulfilled the prerequisites before allowing enrollment.
+### Acceptance Criteria
+- [ ] Academic Staff and Administrators can create a course by providing: title, unique course code, department, description, credit hours, format (lecture/lab/seminar/online/hybrid), and learning outcomes
+- [ ] The system rejects duplicate course codes with a descriptive error
+- [ ] A newly created course defaults to "Active" status and is visible in the catalogue (CAT-001)
+- [ ] Creation is logged in the course change history
 
-**5. Class Scheduling:**
-- The system should assist in scheduling classes, ensuring there are no conflicts in room and time slots.
-- It should take into consideration factors like room capacity, availability of instructors, and so on.
+---
 
-**6. Course Conflict Management:**
-- The system should alert students during registration if a chosen course conflicts with another course they are already registered for.
+## COURSE-002: Update Course Details
 
-**7. Course Ratings and Feedback:**
-- Students should be able to rate and provide feedback on the courses they've completed. This could help other students during their course selection process.
-- Staff should be able to view and analyze these ratings and feedback to improve course quality.
+**As an** Academic Staff member
+**I want** to update the details of an existing course
+**So that** the information students see is accurate and current
 
-**8. Course Material Management:**
-- Instructors should be able to upload course materials, such as syllabi, reading materials, and assignments, directly to the system.
-- The system should also integrate with the university’s learning management system, if one exists.
+### Acceptance Criteria
+- [ ] Academic Staff and Administrators can edit any field on an active course
+- [ ] Each save creates a timestamped change-history entry recording what changed, who changed it, and when
+- [ ] Students enrolled in a course section receive a notification (see [notifications-requirements.md](./notifications-requirements.md)) when the course description, schedule, or instructor changes materially
+- [ ] Changes to prerequisites do not retroactively affect students already enrolled in the current term
 
-**9. Course Communication:**
-- Instructors should be able to send announcements to all students enrolled in a course through the system.
-- Students should receive notifications when new announcements are posted.
+---
 
-**10. Data Security and Privacy:**
-- The system should ensure the privacy and security of all course data, including materials, grades, and student information.
-- Only authorized personnel should be able to modify course details.
+## COURSE-003: Retire a Course
 
-These requirements aim to ensure that the course management feature of the university registration system is robust, user-friendly, and efficient, making the course selection and enrollment process easier for students and administrative tasks simpler for staff.
+**As an** Academic Staff member
+**I want** to retire a course that is no longer offered
+**So that** students cannot enroll in it while historical records are preserved
+
+### Acceptance Criteria
+- [ ] Academic Staff and Administrators can set a course status to "Retired"
+- [ ] Retiring a course with active enrollments in any open term requires an explicit Administrator confirmation step
+- [ ] Retired courses are hidden from the student-facing catalogue but remain in historical records and transcripts
+- [ ] Retired courses cannot be scheduled for future sections until reactivated by an Administrator
+
+---
+
+## COURSE-004: Schedule Course Sections per Semester
+
+**As an** Academic Staff member
+**I want** to schedule one or more sections of a course for a specific semester
+**So that** students can enroll in specific meeting times and locations
+
+### Acceptance Criteria
+- [ ] A section requires: associated course, semester/term, instructor, meeting days/times, location (room or "online"), start and end dates, and section capacity (see [course-capacity-requirements.md](./course-capacity-requirements.md))
+- [ ] The system prevents scheduling a section in a room that already has a confirmed booking for the same day/time
+- [ ] The system prevents assigning an instructor to two sections with overlapping day/time
+- [ ] Sections are visible in the course catalogue (CAT-001) once published by Academic Staff
+
+---
+
+## COURSE-005: Manage Prerequisites and Corequisites
+
+**As an** Academic Staff member
+**I want** to define prerequisites and corequisites for a course
+**So that** students enroll in the correct sequence and the system enforces eligibility automatically
+
+### Acceptance Criteria
+- [ ] Academic Staff can add, edit, or remove prerequisites (courses that must be completed before enrollment) and corequisites (courses that must be taken concurrently)
+- [ ] Prerequisites can specify a minimum grade requirement (e.g., "MATH-101 with grade C or higher")
+- [ ] The registration system enforces prerequisite and corequisite rules at enrollment time (see AUTH-006)
+- [ ] Changes to prerequisites are reflected in the catalogue detail page (CAT-004) immediately
+
+---
+
+## COURSE-006: Detect Registration Schedule Conflicts
+
+**As a** Student
+**I want** the system to detect and warn me about schedule conflicts during registration
+**So that** I do not accidentally enroll in two courses with overlapping meeting times
+
+### Acceptance Criteria
+- [ ] When a student attempts to enroll in a section, the system checks all currently enrolled sections for that term for day/time overlap
+- [ ] If a conflict is detected, enrollment is blocked and the student is shown which sections conflict
+- [ ] Advisors can grant a conflict override for exceptional cases; overrides are logged
+- [ ] The student's registration summary page (REG-004) clearly shows any pending conflict flags
+
+---
+
+## COURSE-007: Upload Course Materials
+
+**As an** Instructor
+**I want** to upload course materials to a section I am teaching
+**So that** enrolled students can access syllabi, readings, and assignments in one place
+
+### Acceptance Criteria
+- [ ] Instructors can upload files (PDF, DOCX, PPTX, images, ZIP) up to 100 MB per file to their assigned sections
+- [ ] Uploaded materials are visible only to students enrolled in that section and to Administrators
+- [ ] Instructors can organize materials into folders (e.g., "Week 1", "Assignments")
+- [ ] Instructors can update or delete materials; deletions are logged with the instructor's ID and timestamp
+- [ ] Students receive an in-system notification (see [notifications-requirements.md](./notifications-requirements.md)) when new materials are posted
+
+---
+
+## COURSE-008: Send Course Announcements
+
+**As an** Instructor
+**I want** to send announcements to all students enrolled in my course section
+**So that** students are promptly informed of important updates
+
+### Acceptance Criteria
+- [ ] Instructors can compose and send an announcement to all enrolled students in a section
+- [ ] Announcements are delivered as in-system notifications and optionally via email (per student notification preferences — see [notifications-requirements.md](./notifications-requirements.md))
+- [ ] Announcements are archived and visible to enrolled students in the course's announcement history
+- [ ] Administrators can send announcements on behalf of an instructor if needed
+
+---
+
+## COURSE-009: Submit and View Course Ratings & Feedback
+
+**As a** Student
+**I want** to rate and provide feedback on a course I have completed
+**So that** other students can make informed choices and faculty can improve course quality
+
+### Acceptance Criteria
+- [ ] Students can submit a rating (1–5 stars) and optional free-text feedback for a course section after the term ends (grade posting date or later)
+- [ ] Ratings and feedback are anonymous to other students and instructors; only Administrators can associate a submission with a specific student
+- [ ] Each student can submit feedback for a given section only once
+- [ ] Instructors and Academic Staff can view aggregated ratings and anonymized feedback for sections they manage
+- [ ] Aggregate ratings (average score, number of responses) are visible in the course catalogue detail page (CAT-004) after a minimum of 5 responses have been collected
