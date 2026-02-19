@@ -86,7 +86,7 @@
 
 **Acceptance Criteria**
 - [ ] If the email/SMS notification service is unavailable, core registration transactions (enroll, drop) still complete; notifications are queued and sent when the service recovers
-- [ ] If an external integration (INT-001 – INT-003) is unavailable, the URS displays a clear "data currently unavailable" message in the affected area without crashing or blocking unrelated workflows
+- [ ] If an external integration (INT-001 – INT-003) is unavailable, Curriculab displays a clear "data currently unavailable" message in the affected area without crashing or blocking unrelated workflows
 - [ ] If the payment gateway (PAY-002) is unavailable, students can still view their balance and access all non-payment features
 
 ---

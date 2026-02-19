@@ -30,7 +30,7 @@
 
 ### Acceptance Criteria
 - [ ] Academic Staff and Administrators see a review queue of pending transfer credit requests filterable by status, source institution, and submission date
-- [ ] For each submitted course, reviewers can: approve as a direct equivalent to a URS course (with mapping to a specific catalogue entry — DEG-005), approve as general elective credit (with a category), or deny with a required reason
+- [ ] For each submitted course, reviewers can: approve as a direct equivalent to a Curriculab course (with mapping to a specific catalogue entry — DEG-005), approve as general elective credit (with a category), or deny with a required reason
 - [ ] Partial approval is supported: some courses in a request can be approved while others are denied or held pending more information
 - [ ] Reviewers can request additional documentation from the student; the request pauses the clock on the review SLA and the student is notified
 - [ ] All decisions are logged in the audit trail (AUTH-010) with the reviewer's identity and timestamp
@@ -44,7 +44,7 @@
 **So that** I know which courses were accepted and how they apply to my degree requirements
 
 ### Acceptance Criteria
-- [ ] A transfer credit summary page lists all submitted courses with their decision status: Pending, Approved (with URS equivalent or elective category), Denied (with reason), or Additional Information Requested
+- [ ] A transfer credit summary page lists all submitted courses with their decision status: Pending, Approved (with Curriculab equivalent or elective category), Denied (with reason), or Additional Information Requested
 - [ ] Approved transfer credits appear in the student's enrollment history (REC-002) and are reflected immediately in the degree audit (REC-006) with a "Transfer Credit" label
 - [ ] Students receive a notification when a decision is made on any course in their request
 - [ ] The transfer credit summary is accessible to the student, their Advisor, and Administrators
@@ -75,5 +75,5 @@
 ### Acceptance Criteria
 - [ ] Approved transfer credits are automatically applied to the degree audit (REC-006) based on the equivalency mapping set during review (XFER-002)
 - [ ] Advisors can adjust how a transfer credit is applied to a requirement category (e.g., move from "General Elective" to "Technical Elective") with a mandatory reason note; the change is logged
-- [ ] The degree audit clearly distinguishes transfer credits from URS-completed courses (labeled "Transfer — [Source Institution]")
+- [ ] The degree audit clearly distinguishes transfer credits from Curriculab-completed courses (labeled "Transfer — [Source Institution]")
 - [ ] Changes to an equivalency mapping (DEG-005) after a transfer credit has been applied trigger a recalculation of affected students' degree audits and notify their Advisors

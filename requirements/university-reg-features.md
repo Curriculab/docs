@@ -1,10 +1,10 @@
-# University Registration System — System Overview
+# Curriculab — System Overview
 
 ## Purpose and Scope
 
-This document describes the scope of the **University Registration System (URS)**, a comprehensive information management platform that supports the full lifecycle of student registration, course management, academic records, billing, and institutional reporting.
+This document describes the scope of **Curriculab**, a comprehensive university registration and management platform that supports the full lifecycle of student registration, course management, academic records, billing, and institutional reporting.
 
-The URS serves students, faculty, academic staff, advisors, registrars, and administrators. It integrates with external systems (financial aid, housing, library) and exposes a REST API for authorized third-party consumers.
+Curriculab serves students, faculty, academic staff, advisors, registrars, and administrators. It integrates with external systems (financial aid, housing, library) and exposes a REST API for authorized third-party consumers.
 
 All detailed functional requirements are captured as **user stories** in the documents listed in the Feature Area Index below.
 

@@ -73,7 +73,7 @@
 
 ### Acceptance Criteria
 - [ ] Academic Staff can map one or more catalogue courses (CAT-001) to each requirement slot
-- [ ] Equivalency rules can be defined: a course at another institution (transfer credit) can be marked as equivalent to a specific URS course for audit purposes
+- [ ] Equivalency rules can be defined: a course at another institution (transfer credit) can be marked as equivalent to a specific Curriculab course for audit purposes
 - [ ] A single course can satisfy requirements in multiple categories if the program rules allow it (double-counting); programs can restrict double-counting per category
 - [ ] "Elective" slots can be defined with constraints (e.g., "any 3-credit CSCI course at the 300 level or above") rather than specific course codes
 - [ ] Changes to course mappings are versioned consistent with DEG-002 catalog-year rules

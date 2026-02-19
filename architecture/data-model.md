@@ -3,7 +3,7 @@
 > **Status:** Living document — update whenever entities or attributes change.
 > **Last updated:** 2026-02-18
 
-This document defines the canonical entity model for the University Registration System (URS). It is the authoritative reference for database schema design, API contract design, and code generation.
+This document defines the canonical entity model for **Curriculab**. It is the authoritative reference for database schema design, API contract design, and code generation.
 
 ---
 

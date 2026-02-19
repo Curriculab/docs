@@ -1,6 +1,10 @@
-# automation-university-docs
+# Curriculab
 
-Requirements documentation for a large-scale **University Registration System (URS)** simulation. All functional requirements are written as **user stories** with acceptance criteria to support test-driven development, stakeholder review, and automation testing exercises.
+**Curriculab** is a free, open-source reference platform built to give developers real-world practice on a production-grade system — without the constraints of a toy tutorial app.
+
+The platform is a fully realized university registration and management system. Its scope intentionally spans the full technology stack so that engineers across every discipline have something meaningful to work against: API design, web and mobile front-ends, DevOps and infrastructure, database architecture, security, automation testing, and more.
+
+All functional requirements are written as **user stories** with acceptance criteria.
 
 ## User Story Format
 
@@ -17,7 +21,7 @@ Every story follows this structure:
 - [ ] ...
 ```
 
-User roles (Student, Instructor, Academic Staff, Advisor, Registrar, Administrator) are defined in the [System Overview](./requirements/university-reg-features.md).
+User roles (Student, Instructor, Academic Staff, Advisor, Registrar, Administrator) are defined in the [Curriculab System Overview](./requirements/university-reg-features.md).
 
 ---
 

@@ -1,6 +1,6 @@
 # Story Prioritization — MoSCoW
 
-This document assigns a MoSCoW priority to every user story across all feature docs. Priorities reflect what is needed to deliver a functional v1 University Registration System versus what can be deferred.
+This document assigns a MoSCoW priority to every user story across all feature docs. Priorities reflect what is needed to deliver a functional v1 Curriculab versus what can be deferred.
 
 **Legend**
 - **M — Must Have:** System cannot go live without this. Core registration flow, security, legal compliance.

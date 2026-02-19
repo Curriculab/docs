@@ -62,8 +62,8 @@
 ### Acceptance Criteria
 - [ ] The system supports SAML 2.0 and/or OIDC for SSO authentication with the university's identity provider (IdP)
 - [ ] On first SSO login, the system auto-provisions an account using attributes from the IdP assertion (name, email, role/group mapping)
-- [ ] Role assignment is driven by IdP group membership; when a user's group changes in the IdP, their role in the URS is updated on their next login
-- [ ] Accounts for users removed from the IdP are automatically deactivated in the URS within 24 hours (via directory sync or on the next login attempt)
+- [ ] Role assignment is driven by IdP group membership; when a user's group changes in the IdP, their role in Curriculab is updated on their next login
+- [ ] Accounts for users removed from the IdP are automatically deactivated in Curriculab within 24 hours (via directory sync or on the next login attempt)
 - [ ] Administrators can view the SSO/directory sync status of each account (IdP-linked vs. local-only) in the user management interface
 - [ ] SSO configuration (IdP metadata, attribute mappings) is managed by Administrators in a protected settings area
 

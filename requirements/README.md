@@ -1,6 +1,6 @@
 # Requirements
 
-Functional requirements for the University Registration System (URS), written as user stories with acceptance criteria.
+Functional requirements for **Curriculab**, written as user stories with acceptance criteria.
 
 | Document | Prefix | Stories | Description |
 |---|---|---|---|

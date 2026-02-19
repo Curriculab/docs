@@ -1,6 +1,6 @@
 # Architecture Decision Records (ADRs)
 
-This folder records significant architectural decisions made during the design of the University Registration System. Each ADR explains what was decided, why, and what alternatives were considered.
+This folder records significant architectural decisions made during the design of Curriculab. Each ADR explains what was decided, why, and what alternatives were considered.
 
 ## Format
 
