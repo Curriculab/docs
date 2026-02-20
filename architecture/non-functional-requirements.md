@@ -1,3 +1,8 @@
+---
+sidebar_label: "Non-Functional Reqs"
+description: "Performance, scalability, availability, maintainability, and localization requirements."
+---
+
 # Non-Functional Requirements
 
 **System Overview:** [university-reg-features.md](../requirements/university-reg-features.md)

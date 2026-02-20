@@ -1,3 +1,8 @@
+---
+sidebar_label: "Academic Advising"
+description: "Advisor info, appointment scheduling, advising notes, academic plans, and overrides."
+---
+
 # Academic Advising Requirements
 
 **Story Prefix:** ADV

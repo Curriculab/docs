@@ -1,3 +1,8 @@
+---
+sidebar_label: "ADR Index"
+description: "Index of Architecture Decision Records for Curriculab."
+---
+
 # Architecture Decision Records (ADRs)
 
 This folder records significant architectural decisions made during the design of Curriculab. Each ADR explains what was decided, why, and what alternatives were considered.

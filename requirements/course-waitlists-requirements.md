@@ -1,3 +1,8 @@
+---
+sidebar_label: "Waitlists"
+description: "Waitlist join, position tracking, auto-enrollment, priority rules, and reporting."
+---
+
 # Course Waitlist Requirements
 
 **Story Prefix:** WAIT

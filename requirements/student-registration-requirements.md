@@ -1,3 +1,8 @@
+---
+sidebar_label: "Registration"
+description: "Register for courses, add/drop, registration summary, holds, and email confirmation."
+---
+
 # Student Registration Requirements
 
 **Story Prefix:** REG

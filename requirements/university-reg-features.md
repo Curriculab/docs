@@ -1,3 +1,8 @@
+---
+sidebar_label: "System Overview"
+description: "Curriculab system scope, user roles, feature index, and cross-cutting concerns."
+---
+
 # Curriculab — System Overview
 
 ## Purpose and Scope

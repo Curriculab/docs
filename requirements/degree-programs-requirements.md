@@ -1,3 +1,8 @@
+---
+sidebar_label: "Degree Programs"
+description: "Create, update, and retire programs; requirement categories and catalog year management."
+---
+
 # Degree Programs & Curriculum Management Requirements
 
 **Story Prefix:** DEG

@@ -1,3 +1,8 @@
+---
+sidebar_label: "Payment & Billing"
+description: "Fee breakdown, online payments, billing history, financial aid display, and statements."
+---
+
 # Payment & Billing Requirements
 
 **Story Prefix:** PAY

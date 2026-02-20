@@ -1,3 +1,8 @@
+---
+sidebar_label: "Student Profile"
+description: "Personal info, emergency contacts, enrollment status, program declaration, and photo."
+---
+
 # Student Profile & Account Management Requirements
 
 **Story Prefix:** PROF

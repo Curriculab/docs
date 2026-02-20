@@ -1,3 +1,8 @@
+---
+sidebar_label: "Semesters & Sessions"
+description: "Term creation, registration windows, add/drop deadlines, and session archiving."
+---
+
 # Semester & Session Management Requirements
 
 **Story Prefix:** SEM

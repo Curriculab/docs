@@ -1,3 +1,8 @@
+---
+sidebar_label: "Reporting"
+description: "Enrollment, demographic, and grade distribution reports with CSV export."
+---
+
 # Reporting Requirements
 
 **Story Prefix:** RPT

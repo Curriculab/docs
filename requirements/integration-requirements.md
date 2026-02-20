@@ -1,3 +1,8 @@
+---
+sidebar_label: "Integrations"
+description: "Financial aid, housing, library syncs, REST API, and OAuth 2.0 consumer auth."
+---
+
 # Integration Requirements
 
 **Story Prefix:** INT

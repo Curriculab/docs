@@ -1,3 +1,8 @@
+---
+sidebar_label: "Story Prioritization"
+description: "MoSCoW priority table for all 122 stories across 23 feature areas."
+---
+
 # Story Prioritization — MoSCoW
 
 This document assigns a MoSCoW priority to every user story across all feature docs. Priorities reflect what is needed to deliver a functional v1 Curriculab versus what can be deferred.

@@ -1,3 +1,8 @@
+---
+sidebar_label: "Notifications"
+description: "Email and SMS events, in-system notification center, and preference settings."
+---
+
 # Notifications Requirements
 
 **Story Prefix:** NOTIF

@@ -1,3 +1,8 @@
+---
+sidebar_label: "Course Catalogue"
+description: "Browse, search, filter, view course details, and manage catalogue entries."
+---
+
 # Course Catalogue Requirements
 
 **Story Prefix:** CAT

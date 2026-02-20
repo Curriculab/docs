@@ -1,3 +1,8 @@
+---
+sidebar_label: "Story Map"
+description: "Five end-to-end user journeys mapping all 122 stories in sequence."
+---
+
 # Story Map — User Journeys
 
 A story map arranges user stories along real end-to-end journeys. Reading left-to-right shows the sequence of activities; reading top-to-bottom within a column shows the full depth of that step (must-have at the top, enhancements below).

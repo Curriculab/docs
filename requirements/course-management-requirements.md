@@ -1,3 +1,8 @@
+---
+sidebar_label: "Course Management"
+description: "Course lifecycle, section scheduling, prerequisites, materials, and announcements."
+---
+
 # Course Management Requirements
 
 **Story Prefix:** COURSE

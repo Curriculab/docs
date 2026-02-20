@@ -1,3 +1,8 @@
+---
+sidebar_label: "Transfer Credit"
+description: "Submit transfer courses, staff review, student view, appeals, and degree audit application."
+---
+
 # Transfer Credit Evaluation Requirements
 
 **Story Prefix:** XFER

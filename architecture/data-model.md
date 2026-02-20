@@ -1,3 +1,8 @@
+---
+sidebar_label: "Data Model"
+description: "57-entity canonical data model across 6 domain clusters, with ERDs and design decisions."
+---
+
 # Data Model
 
 > **Status:** Living document — update whenever entities or attributes change.

@@ -1,3 +1,8 @@
+---
+sidebar_label: "Course Capacity"
+description: "Enrollment capacity enforcement, real-time counts, reserved seats, and overrides."
+---
+
 # Course Capacity Requirements
 
 **Story Prefix:** CAP

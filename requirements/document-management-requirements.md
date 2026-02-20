@@ -1,3 +1,8 @@
+---
+sidebar_label: "Document Management"
+description: "Document submission, staff review workflow, status tracking, and retention rules."
+---
+
 # Document Management Requirements
 
 **Story Prefix:** DOC

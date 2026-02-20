@@ -1,3 +1,8 @@
+---
+sidebar_label: "Support & Help"
+description: "FAQ, ticket submission, ticket tracking, staff response workflow, and metrics."
+---
+
 # Support & Help Requirements
 
 **Story Prefix:** SUP

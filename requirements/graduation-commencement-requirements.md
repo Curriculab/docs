@@ -1,3 +1,8 @@
+---
+sidebar_label: "Graduation"
+description: "Graduation application, Registrar clearance, ceremony registration, and diploma ordering."
+---
+
 # Graduation & Commencement Requirements
 
 **Story Prefix:** GRAD

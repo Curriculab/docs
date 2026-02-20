@@ -1,3 +1,8 @@
+---
+sidebar_label: "Academic Records"
+description: "Enrollment history, transcripts, GPA, degree audit, and grade submission."
+---
+
 # Academic Records Requirements
 
 **Story Prefix:** REC

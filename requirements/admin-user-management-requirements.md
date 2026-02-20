@@ -1,3 +1,8 @@
+---
+sidebar_label: "User Management"
+description: "Account creation/deactivation, bulk import, SSO provisioning, and role management."
+---
+
 # Administrative User Management Requirements
 
 **Story Prefix:** USR

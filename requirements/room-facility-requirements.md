@@ -1,3 +1,8 @@
+---
+sidebar_label: "Rooms & Facilities"
+description: "Room availability, conflict enforcement, capacity, and blocked period management."
+---
+
 # Room & Facility Management Requirements
 
 **Story Prefix:** ROOM

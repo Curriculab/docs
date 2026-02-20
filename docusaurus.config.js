@@ -7,7 +7,7 @@ const config = {
   title: 'Curriculab',
   tagline:
     'A free, open-source reference platform for real-world developer practice on a production-grade university registration system.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // GitHub Pages deployment config.
   // Change these to match your GitHub org and repo.
@@ -63,6 +63,10 @@ const config = {
     ({
       navbar: {
         title: 'Curriculab',
+        logo: {
+          alt: 'Curriculab',
+          src: 'img/logo.svg',
+        },
         items: [
           {
             type: 'docSidebar',

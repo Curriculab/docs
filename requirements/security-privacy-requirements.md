@@ -1,3 +1,8 @@
+---
+sidebar_label: "Security & Privacy"
+description: "Encryption, FERPA/GDPR compliance, backups, data retention, and deletion."
+---
+
 # Security & Privacy Requirements
 
 **Story Prefix:** SEC

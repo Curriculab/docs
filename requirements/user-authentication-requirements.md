@@ -1,3 +1,8 @@
+---
+sidebar_label: "Authentication"
+description: "Login, password recovery, 2FA, session timeout, RBAC, and audit logging."
+---
+
 # User Authentication & Authorization Requirements
 
 **Story Prefix:** AUTH

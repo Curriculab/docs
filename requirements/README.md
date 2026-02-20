@@ -1,3 +1,8 @@
+---
+sidebar_label: "Index"
+description: "Index of all 23 feature requirement documents for Curriculab."
+---
+
 # Requirements
 
 Functional requirements for **Curriculab**, written as user stories with acceptance criteria.

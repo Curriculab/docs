@@ -1,3 +1,8 @@
+---
+sidebar_label: "Accessibility"
+description: "WCAG 2.1 AA compliance, keyboard navigation, screen reader, and responsive design."
+---
+
 # Accessibility Requirements
 
 **Story Prefix:** ACC
