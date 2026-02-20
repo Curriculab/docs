@@ -1,0 +1,85 @@
+name: New User Story
+description: Propose a new user story for Curriculab.
+title: "PREFIX-NNN: Story Title"
+labels: ["user-story"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting, check the relevant `requirements/*-requirements.md` file to confirm the next available story number for your chosen prefix.
+        All stories must follow the [standard format](https://curriculab.github.io/docs/requirements/README).
+
+  - type: dropdown
+    id: prefix
+    attributes:
+      label: Feature Area
+      description: Which feature area does this story belong to?
+      options:
+        - AUTH — User Authentication & Authorization
+        - CAT — Course Catalogue
+        - COURSE — Course Management
+        - CAP — Course Capacity
+        - WAIT — Course Waitlists
+        - REG — Student Registration
+        - SEM — Semester & Session Management
+        - REC — Academic Records
+        - PAY — Payment & Billing
+        - RPT — Reporting
+        - INT — Integrations
+        - ACC — Accessibility
+        - SEC — Security & Privacy
+        - NOTIF — Notifications
+        - SUP — Support & Help
+        - PROF — Student Profile & Account Management
+        - DEG — Degree Programs & Curriculum Management
+        - ROOM — Room & Facility Management
+        - USR — Administrative User Management
+        - ADV — Academic Advising
+        - GRAD — Graduation & Commencement
+        - XFER — Transfer Credit Evaluation
+        - DOC — Document Management
+    validations:
+      required: true
+
+  - type: input
+    id: story-id
+    attributes:
+      label: Story ID
+      description: The next available ID for this prefix (current highest + 1). Check the requirements file to confirm.
+      placeholder: "e.g. AUTH-011"
+    validations:
+      required: true
+
+  - type: textarea
+    id: story-body
+    attributes:
+      label: User Story
+      value: |
+        **As a** [role]
+        **I want** [goal]
+        **So that** [benefit]
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: cross-references
+    attributes:
+      label: Cross-references
+      description: >
+        Links to related stories, deduplication notes, or notification cross-references.
+        If this story triggers notifications, reference the relevant NOTIF story here
+        instead of defining delivery behaviour inline.
+      placeholder: "e.g. Triggers NOTIF-002 (see notifications-requirements.md). Depends on AUTH-001."
+    validations:
+      required: false

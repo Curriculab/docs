@@ -1,0 +1,61 @@
+name: ADR Proposal
+description: Propose a new Architecture Decision Record.
+title: "ADR-NNN: Short Title"
+labels: ["adr"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ADRs document significant architectural decisions — technology choices, data-modelling patterns, cross-cutting conventions.
+        Check the [ADR index](https://curriculab.github.io/docs/decisions/) for the next available number before submitting.
+        Once merged, ADRs are **append-only** — to reverse a decision, open a new ADR with status *Supersedes ADR-NNN*.
+
+  - type: input
+    id: title
+    attributes:
+      label: Decision Title
+      description: A concise title. The ADR number will be assigned when the file is created.
+      placeholder: "e.g. Use Redis for distributed session caching"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What situation or problem prompted this decision? Describe the forces at play, constraints, and why a decision is needed now.
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision
+    attributes:
+      label: Proposed Decision
+      description: What do you propose we decide? Be specific.
+    validations:
+      required: true
+
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: What are the expected results of this decision?
+      value: |
+        **Positive**
+        -
+
+        **Negative**
+        -
+
+        **Neutral**
+        -
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other options did you evaluate, and why were they rejected?
+    validations:
+      required: false
