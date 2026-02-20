@@ -50,6 +50,11 @@ const sidebars = {
 
   decisionsSidebar: [
     'decisions/README',
+    'decisions/postgresql-primary-database',
+    'decisions/uuid-v4-primary-keys',
+    'decisions/user-student-joined-table-inheritance',
+    'decisions/optimistic-concurrency-enrollment',
+    'decisions/docusaurus-documentation-platform',
   ],
 };
 

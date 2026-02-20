@@ -32,7 +32,11 @@ What other options were evaluated and why were they rejected?
 
 | ADR | Title | Status |
 |---|---|---|
-| _(none yet)_ | | |
+| [ADR-001](./001-postgresql-primary-database.md) | PostgreSQL as the Primary Database | Accepted |
+| [ADR-002](./002-uuid-v4-primary-keys.md) | UUID v4 as Primary Keys for All Entities | Accepted |
+| [ADR-003](./003-user-student-joined-table-inheritance.md) | Single User Table with Joined-Table Inheritance for Student | Accepted |
+| [ADR-004](./004-optimistic-concurrency-enrollment.md) | Database Constraint Enforcement for Section Enrollment Concurrency | Accepted |
+| [ADR-005](./005-docusaurus-documentation-platform.md) | Docusaurus as the Documentation Platform | Accepted |
 
 ---
 
