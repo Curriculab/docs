@@ -55,6 +55,11 @@ const sidebars = {
     'decisions/user-student-joined-table-inheritance',
     'decisions/optimistic-concurrency-enrollment',
     'decisions/docusaurus-documentation-platform',
+    'decisions/grade-correction-audit-trail',
+    'decisions/application-managed-waitlist-position',
+    'decisions/immutable-degree-audit-snapshot',
+    'decisions/field-level-course-change-history',
+    'decisions/payment-gateway-token-storage',
   ],
 };
 

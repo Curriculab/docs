@@ -37,6 +37,11 @@ What other options were evaluated and why were they rejected?
 | [ADR-003](./003-user-student-joined-table-inheritance.md) | Single User Table with Joined-Table Inheritance for Student | Accepted |
 | [ADR-004](./004-optimistic-concurrency-enrollment.md) | Database Constraint Enforcement for Section Enrollment Concurrency | Accepted |
 | [ADR-005](./005-docusaurus-documentation-platform.md) | Docusaurus as the Documentation Platform | Accepted |
+| [ADR-006](./006-grade-correction-audit-trail.md) | Grade on Enrollment with GradeCorrection as the Audit Trail | Accepted |
+| [ADR-007](./007-application-managed-waitlist-position.md) | Application-Managed Waitlist Position | Accepted |
+| [ADR-008](./008-immutable-degree-audit-snapshot.md) | Immutable JSONB Blob for Degree Audit Snapshots | Accepted |
+| [ADR-009](./009-field-level-course-change-history.md) | Field-Level Diff for Course Change History | Accepted |
+| [ADR-010](./010-payment-gateway-token-storage.md) | Payment Gateway Token Storage — No Raw Card Data | Accepted |
 
 ---
 
