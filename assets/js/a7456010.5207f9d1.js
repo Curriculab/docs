@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkcurriculab_docs=globalThis.webpackChunkcurriculab_docs||[]).push([[235],{8552(u){u.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
