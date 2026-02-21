@@ -41,7 +41,10 @@ This file gives Claude Code the context needed to work effectively in this repo 
 ```
 docs/
 ├── CLAUDE.md                          ← this file
-├── README.md                          ← entry point and full document index
+├── README.md                          ← entry point; links to Docusaurus site
+├── package.json                       ← Docusaurus dependencies
+├── docusaurus.config.js               ← Docusaurus configuration
+├── sidebars.js                        ← explicit sidebar definitions
 │
 ├── requirements/                      ← 24 files: system overview + 23 feature docs
 │   ├── README.md                      ← index table of all requirement docs
@@ -56,8 +59,38 @@ docs/
 │   ├── story-prioritization.md        ← MoSCoW table for all 122 stories
 │   └── story-map.md                   ← 5 end-to-end user journeys
 │
-└── decisions/                         ← Architecture Decision Records (ADRs)
-    └── README.md                      ← ADR format template and index
+├── decisions/                         ← Architecture Decision Records (ADRs)
+│   ├── README.md                      ← ADR format template and index
+│   ├── 001-postgresql-primary-database.md
+│   ├── 002-uuid-v4-primary-keys.md
+│   ├── 003-user-student-joined-table-inheritance.md
+│   ├── 004-optimistic-concurrency-enrollment.md
+│   ├── 005-docusaurus-documentation-platform.md
+│   ├── 006-grade-correction-audit-trail.md
+│   ├── 007-application-managed-waitlist-position.md
+│   ├── 008-immutable-degree-audit-snapshot.md
+│   ├── 009-field-level-course-change-history.md
+│   └── 010-payment-gateway-token-storage.md
+│
+├── static/
+│   └── img/
+│       ├── favicon.svg                ← blue rounded square, white "C" arc
+│       └── logo.svg
+│
+├── src/
+│   ├── pages/
+│   │   ├── index.js                   ← custom Docusaurus homepage
+│   │   └── index.module.css
+│   └── css/
+│       └── custom.css                 ← Docusaurus theme overrides
+│
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    │   ├── user-story.yml             ← issue template: new user story
+    │   ├── adr-proposal.yml           ← issue template: new ADR proposal
+    │   └── config.yml                 ← disables blank issues, links docs site
+    └── workflows/
+        └── deploy.yml                 ← GitHub Actions: build + deploy to Pages
 ```
 
 ---
@@ -224,6 +257,38 @@ ADRs live in `decisions/`. See `decisions/README.md` for the format template.
 
 ---
 
+## Docusaurus
+
+The docs site is served at **[curriculab.github.io/docs](https://curriculab.github.io/docs/)** via Docusaurus 3, deployed by `.github/workflows/deploy.yml` on every push to `main`.
+
+Key config (`docusaurus.config.js`):
+- `baseUrl: '/docs/'`, `routeBasePath: '/'` — docs served at `/docs/<path>` with no double `/docs/docs/` prefix
+- `path: '.'` with `include` patterns — reads Markdown directly from the repo root; no files are moved
+
+**Sidebar IDs — critical:** Docusaurus strips numeric prefixes from doc IDs. The file `decisions/001-postgresql-primary-database.md` gets the sidebar ID `decisions/postgresql-primary-database` (not `decisions/001-postgresql-primary-database`). Always use the stripped form in `sidebars.js`.
+
+**Front matter:** Every doc has `sidebar_label` and `description` front matter at the top of the file (before any other content).
+
+### Running locally
+
+```bash
+npm install
+npm start     # opens http://localhost:3000/docs/
+```
+
+---
+
+## GitHub Issue Templates
+
+Contributors propose new content via GitHub Issues using two YAML templates (`.github/ISSUE_TEMPLATE/`):
+
+- **`user-story.yml`** — new user stories; includes a dropdown for all 23 feature area prefixes
+- **`adr-proposal.yml`** — new Architecture Decision Records
+
+Blank issues are disabled (`config.yml`); all submissions flow through one of the two templates.
+
+---
+
 ## How to Add New Content
 
 ### New user story
@@ -237,7 +302,8 @@ ADRs live in `decisions/`. See `decisions/README.md` for the format template.
 1. Create `requirements/new-feature-requirements.md` with the standard header
 2. Choose the next available prefix (check `university-reg-features.md`)
 3. Add the file to the Feature Area Index in `requirements/university-reg-features.md`
-4. Add it to the Document Index table in `README.md` and `requirements/README.md`
+4. Add it to the Document Index table in `requirements/README.md`
+5. Add the doc ID to the `Feature Requirements` category in `sidebars.js`
 
 ### New architecture document
 1. Create `architecture/new-doc.md`
@@ -246,3 +312,5 @@ ADRs live in `decisions/`. See `decisions/README.md` for the format template.
 ### New ADR
 1. Create `decisions/NNN-title.md`
 2. Update the index table in `decisions/README.md`
+3. Add the doc ID (without numeric prefix) to `decisionsSidebar` in `sidebars.js`
+   e.g., `'decisions/postgresql-primary-database'` for `001-postgresql-primary-database.md`
